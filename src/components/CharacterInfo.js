@@ -1,9 +1,12 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import characterMats from "../gloomhaven/data/character-mats";
+import image from "../gloomhaven/images/character-mats/brute.png";
 const CharacterInfo = (props) => {
-  const character = characterMats.filter((c) => c.name === props.name);
-
+  const characterArray = characterMats.filter((c) => c.name === props.name);
+  const character = characterArray[0];
+  // Dynamically display the image according to the props
+  const imageSource = require(`../gloomhaven/images/${character.image}`);
   console.log(character);
   return (
     // <Grid container justify content="center">
@@ -12,8 +15,8 @@ const CharacterInfo = (props) => {
     //   </Grid>
     // </Grid>
     <div>
-      <h1>{character[0].name}</h1>
-      <img src={character[0].image} />
+      <h1>{character.name}</h1>
+      <img src={imageSource} />
     </div>
   );
 };
