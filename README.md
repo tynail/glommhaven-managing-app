@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+First of all, Massive thanks to William Habush gloomhaven repository, this is a big collection of gloomhaven data that I use for the application :)
+
+Link : https://github.com/any2cards/gloomhaven
+
 ## Available Scripts
 
 In the project directory, you can run:
