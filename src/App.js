@@ -6,10 +6,12 @@ import { useRoute } from "hookrouter";
 import Routes from "./components/Routes";
 
 function App() {
-  <div className="App">
-    <Navbar />
-    <Character />
-  </div>;
+  return (
+    <div className="App">
+      <Navbar />
+      <Character />
+    </div>
+  );
 }
 
 export default App;
