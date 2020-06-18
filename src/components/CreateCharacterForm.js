@@ -2,6 +2,7 @@ import React from "react";
 import { TextField } from "@material-ui/core";
 import useInputState from "../hooks/useInputState";
 import { makeStyles } from "@material-ui/core/styles";
+import CharacterIcons from "./CharacterIcons";
 
 const useStyles = makeStyles((theme) => ({
   rroot: {
@@ -22,6 +23,7 @@ const CreateCharacterForm = () => {
   const [level, setLevel] = useInputState("");
   const [gold, setGold] = useInputState("");
   const [personalQuest, setPersonalQuest] = useInputState("");
+
   return (
     <form className={classes.root} autoComplete="off">
       <div>
@@ -69,6 +71,7 @@ const CreateCharacterForm = () => {
           onChange={setPersonalQuest}
           fullWidth
         />
+        <CharacterIcons key={1} />
       </div>
     </form>
   );
