@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Character from "./components/Character";
-import { useRoute } from "hookrouter";
-import Routes from "./components/Routes";
+import Routes from "./Routes";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Character />
+      <Routes />
     </div>
   );
 }
