@@ -1,6 +1,5 @@
 import React from "react";
 import CharacterInfo from "./CharacterInfo";
-import CreateCharacterForm from "./CreateCharacterForm";
 
 const characterMock = {
   name: "Bob",
@@ -19,7 +18,6 @@ const Character = () => {
   return (
     <div>
       <CharacterInfo characterData={characterMock} />
-      <CreateCharacterForm />
     </div>
   );
 };
